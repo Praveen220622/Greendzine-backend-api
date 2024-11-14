@@ -13,8 +13,9 @@ app.use(cors())
 app.use("/auth", AuthRouter)
 app.use("/products", ProductRouter)
 
-PORT = proceess.env.port || 8080
-
+app.get('/', (req, res) => {
+    res.send("Hello, the server is running!");
+});
 
 app.listen(PORT, () => {
     console.log(`server is running on ${PORT}`)
