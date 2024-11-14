@@ -14,8 +14,8 @@ app.use("/auth", AuthRouter)
 app.use("/products", ProductRouter)
 
 app.get('/', (req, res) => {
-    res.send("Hello, the server is running!");
-});
+    res.send("Hie")
+})
 
 app.listen(PORT, () => {
     console.log(`server is running on ${PORT}`)
