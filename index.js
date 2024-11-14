@@ -13,7 +13,6 @@ app.use(cors())
 app.use("/auth", AuthRouter)
 app.use("/products", ProductRouter)
 
-PORT = proceess.env.port || 8080
 
 
 app.listen(PORT, () => {
